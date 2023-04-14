@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "code": 101,
+    "name": "Moscow Department",
+    "address": "Moscow, Tverskaya st., 88",
+    "jurisdiction": "ALL"
+  },
+  {
+    "id": 2,
+    "code": 202,
+    "name": "Volga Department",
+    "address": "Samara, Marksa st.,3",
+    "jurisdiction": "SOUTH"
+  },
+  {
+    "id": 3,
+    "code": 303,
+    "name": "Altay Department",
+    "address": "Barnaul, Lenina st., 32B",
+    "jurisdiction": "CENTRAL"
+  }
+]

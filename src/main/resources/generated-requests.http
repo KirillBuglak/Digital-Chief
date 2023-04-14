@@ -1,0 +1,71 @@
+###
+GET http://localhost:8080/departments
+
+###
+GET http://localhost:8080/employees
+
+###
+GET http://localhost:8080/departments/{{id}}
+
+###
+GET http://localhost:8080/employees/{{id}}
+
+###
+DELETE http://localhost:8080/employees
+
+###
+DELETE http://localhost:8080/employees/{{id}}
+
+###
+DELETE http://localhost:8080/departments
+
+###
+DELETE http://localhost:8080/departments/{{id}}
+
+###
+POST http://localhost:8080/departments
+Content-Type: application/json
+
+{
+  "id": 101,
+  "code": 101,
+  "name": "Moscow Department",
+  "address": "Moscow, Tverskaya st., 88",
+  "jurisdiction": "ALL"
+}
+
+###
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "id": 101,
+  "lastName": "Ivanov",
+  "firstName": "Ivan",
+  "salary": 100000.0,
+  "position": "SHERIF",
+  "departmentId": 2
+}
+
+###
+POST http://localhost:8080/departments/{{id}}
+Content-Type: application/json
+
+{
+"code": 303,
+"name": "Altay Department",
+"address": "Barnaul, Lenina st., 32B",
+"jurisdiction": "CENTRAL"
+}
+
+###
+POST http://localhost:8080/employees/{{id}}
+Content-Type: application/json
+
+{
+  "lastName": "Ivanov",
+  "firstName": "Ivan",
+  "salary": 100000.0,
+  "position": "SHERIF",
+  "departmentId": 2
+}
