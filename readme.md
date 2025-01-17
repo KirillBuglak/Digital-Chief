@@ -1,36 +1,34 @@
 <h1 align="center">Digital Chief</h1>
 
 ----
-
-----
 ## Stack
 Java, Spring Boot, Maven, JDBC, Hibernate, SQL, JSON, Lombok.
 ____
-## Краткое описание
-Данное Spring Boot приложение обладает простой функциональностью CRUD:
-- создание - CREATE
-- чтение - READ
-- обновление - UPDATE
-- удаление - DELETE
+## Short description
+This Spring Boot app is a simple CRUD app:
+- CREATE
+- READ
+- UPDATE
+- DELETE
 ____
-## Структура БД
+## DB Structure
 <p align="center">
-<img src="imagesForReadme/1.png"></p> 
+<img src="imagesForReadme/1.png"></p> 
 
 ### Department:
 - id
-- code - числовой код отделения
-- name - название отделения
-- jurisdiction - ответственность отделения(регион)
-- address - адрес отделения
+- code
+- name
+- jurisdiction
+- address
 
 ### Employee:
 - id
-- first_name - имя сотрудника
-- last_name - фамилия сотрудника
-- position - должность сотрудника
-- salary - заработная плата
-- department_id - id отделения в котором работает данный сотрудник
+- first_name
+- last_name
+- position
+- salary
+- department_id
 
 ___
 ## API
@@ -41,27 +39,27 @@ ___
 
 ```
 [
-  {
-    "id": 1,
-    "code": 101,
-    "name": "Moscow Department",
-    "address": "Moscow, Tverskaya st., 88",
-    "jurisdiction": "ALL"
-  },
-  {
-    "id": 2,
-    "code": 202,
-    "name": "Volga Department",
-    "address": "Samara, Marksa st.,3",
-    "jurisdiction": "SOUTH"
-  },
-  {
-    "id": 3,
-    "code": 303,
-    "name": "Altay Department",
-    "address": "Barnaul, Lenina st., 32B",
-    "jurisdiction": "CENTRAL"
-  }
+  {
+    "id": 1,
+    "code": 101,
+    "name": "Moscow Department",
+    "address": "Moscow, Tverskaya st., 88",
+    "jurisdiction": "ALL"
+  },
+  {
+    "id": 2,
+    "code": 202,
+    "name": "Volga Department",
+    "address": "Samara, Marksa st.,3",
+    "jurisdiction": "SOUTH"
+  },
+  {
+    "id": 3,
+    "code": 303,
+    "name": "Altay Department",
+    "address": "Barnaul, Lenina st., 32B",
+    "jurisdiction": "CENTRAL"
+  }
 ]
 ```
 </details>
@@ -73,12 +71,12 @@ ___
 
 ```
 {
-    "id": 3,
-    "code": 303,
-    "name": "Altay Department",
-    "address": "Barnaul, Lenina st., 32B",
-    "jurisdiction": "CENTRAL"
- }
+    "id": 3,
+    "code": 303,
+    "name": "Altay Department",
+    "address": "Barnaul, Lenina st., 32B",
+    "jurisdiction": "CENTRAL"
+ }
 ```
 </details>
 
@@ -89,90 +87,90 @@ ___
 
 ```
 [
-    {
-        "id": 1,
-        "lastName": "Ivanov",
-        "firstName": "Ivan",
-        "salary": 100000.0,
-        "position": "SHERIF",
-        "department": {
-            "id": 1,
-            "code": 101,
-            "name": "Moscow Department",
-            "address": "Moscow, Tverskaya st., 78",
-            "jurisdiction": "ALL"
-        }
-    },
-    {
-        "id": 2,
-        "lastName": "Petrov",
-        "firstName": "Petr",
-        "salary": 150000.0,
-        "position": "OFFICE_MANAGER",
-        "department": {
-            "id": 2,
-            "code": 202,
-            "name": "Volga Department",
-            "address": "Samara, Marksa st.,3",
-            "jurisdiction": "SOUTH"
-        }
-    },
-    {
-        "id": 3,
-        "lastName": "Konev",
-        "firstName": "Vladimir",
-        "salary": 90000.0,
-        "position": "SHERIF",
-        "department": {
-            "id": 3,
-            "code": 303,
-            "name": "Altay Department",
-            "address": "Barnaul, Lenina st., 32B",
-            "jurisdiction": "CENTRAL"
-        }
-    },
-    {
-        "id": 4,
-        "lastName": "Toparev",
-        "firstName": "Alexey",
-        "salary": 71500.0,
-        "position": "STAFF_OFFICER",
-        "department": {
-            "id": 1,
-            "code": 101,
-            "name": "Moscow Department",
-            "address": "Moscow, Tverskaya st., 78",
-            "jurisdiction": "ALL"
-        }
-    },
-    {
-        "id": 5,
-        "lastName": "Jorina",
-        "firstName": "Anastasiya",
-        "salary": 148700.0,
-        "position": "OFFICE_MANAGER",
-        "department": {
-            "id": 2,
-            "code": 202,
-            "name": "Volga Department",
-            "address": "Samara, Marksa st.,3",
-            "jurisdiction": "SOUTH"
-        }
-    },
-    {
-        "id": 6,
-        "lastName": "Popov",
-        "firstName": "Alexandr",
-        "salary": 87650.0,
-        "position": "STAFF_OFFICER",
-        "department": {
-            "id": 3,
-            "code": 303,
-            "name": "Altay Department",
-            "address": "Barnaul, Lenina st., 32B",
-            "jurisdiction": "CENTRAL"
-        }
-    }
+    {
+        "id": 1,
+        "lastName": "Ivanov",
+        "firstName": "Ivan",
+        "salary": 100000.0,
+        "position": "SHERIF",
+        "department": {
+            "id": 1,
+            "code": 101,
+            "name": "Moscow Department",
+            "address": "Moscow, Tverskaya st., 78",
+            "jurisdiction": "ALL"
+        }
+    },
+    {
+        "id": 2,
+        "lastName": "Petrov",
+        "firstName": "Petr",
+        "salary": 150000.0,
+        "position": "OFFICE_MANAGER",
+        "department": {
+            "id": 2,
+            "code": 202,
+            "name": "Volga Department",
+            "address": "Samara, Marksa st.,3",
+            "jurisdiction": "SOUTH"
+        }
+    },
+    {
+        "id": 3,
+        "lastName": "Konev",
+        "firstName": "Vladimir",
+        "salary": 90000.0,
+        "position": "SHERIF",
+        "department": {
+            "id": 3,
+            "code": 303,
+            "name": "Altay Department",
+            "address": "Barnaul, Lenina st., 32B",
+            "jurisdiction": "CENTRAL"
+        }
+    },
+    {
+        "id": 4,
+        "lastName": "Toparev",
+        "firstName": "Alexey",
+        "salary": 71500.0,
+        "position": "STAFF_OFFICER",
+        "department": {
+            "id": 1,
+            "code": 101,
+            "name": "Moscow Department",
+            "address": "Moscow, Tverskaya st., 78",
+            "jurisdiction": "ALL"
+        }
+    },
+    {
+        "id": 5,
+        "lastName": "Jorina",
+        "firstName": "Anastasiya",
+        "salary": 148700.0,
+        "position": "OFFICE_MANAGER",
+        "department": {
+            "id": 2,
+            "code": 202,
+            "name": "Volga Department",
+            "address": "Samara, Marksa st.,3",
+            "jurisdiction": "SOUTH"
+        }
+    },
+    {
+        "id": 6,
+        "lastName": "Popov",
+        "firstName": "Alexandr",
+        "salary": 87650.0,
+        "position": "STAFF_OFFICER",
+        "department": {
+            "id": 3,
+            "code": 303,
+            "name": "Altay Department",
+            "address": "Barnaul, Lenina st., 32B",
+            "jurisdiction": "CENTRAL"
+        }
+    }
 ]
 ```
 </details>
@@ -184,18 +182,18 @@ ___
 
 ```
 {
-    "id": 1,
-    "lastName": "Ivanov",
-    "firstName": "Ivan",
-    "salary": 100000.0,
-    "position": "SHERIF",
-    "department": {
-        "id": 1,
-        "code": 101,
-        "name": "Moscow Department",
-        "address": "Moscow, Tverskaya st., 78",
-        "jurisdiction": "ALL"
-    }
+    "id": 1,
+    "lastName": "Ivanov",
+    "firstName": "Ivan",
+    "salary": 100000.0,
+    "position": "SHERIF",
+    "department": {
+        "id": 1,
+        "code": 101,
+        "name": "Moscow Department",
+        "address": "Moscow, Tverskaya st., 78",
+        "jurisdiction": "ALL"
+    }
 }
 ```
 </details>
@@ -207,11 +205,11 @@ ___
 
 ```
 {
-  "id": 3,
-  "code": 303,
-  "name": "Altay Department",
-  "address": "Barnaul, Lenina st., 32B",
-  "jurisdiction": "CENTRAL"
+  "id": 3,
+  "code": 303,
+  "name": "Altay Department",
+  "address": "Barnaul, Lenina st., 32B",
+  "jurisdiction": "CENTRAL"
 }
 ```
 </details>
@@ -234,10 +232,10 @@ ___
 
 ```
 {
-  "code": 303,
-  "name": "Altay Department",
-  "address": "Barnaul, Lenina st., 32B",
-  "jurisdiction": "CENTRAL"
+  "code": 303,
+  "name": "Altay Department",
+  "address": "Barnaul, Lenina st., 32B",
+  "jurisdiction": "CENTRAL"
 }
 ```
 </details>
@@ -260,12 +258,12 @@ ___
 
 ```
 {
-   "id": 100,
-   "lastName": "Ivanov",
-   "firstName": "Ivan",
-   "salary": 100000.0,
-   "position": "SHERIF",
-   "departmentId": 2
+   "id": 100,
+   "lastName": "Ivanov",
+   "firstName": "Ivan",
+   "salary": 100000.0,
+   "position": "SHERIF",
+   "departmentId": 2
 }
 ```
 </details>
@@ -288,11 +286,11 @@ ___
 
 ```
 {
-   "lastName": "Ivanov",
-   "firstName": "Ivan",
-   "salary": 100000.0,
-   "position": "SHERIF",
-   "departmentId": 2
+   "lastName": "Ivanov",
+   "firstName": "Ivan",
+   "salary": 100000.0,
+   "position": "SHERIF",
+   "departmentId": 2
 }
 ```
 </details>
@@ -365,9 +363,8 @@ Incorrect info
 </details>
 
 ___
-## Запросы
 <details>
-<summary>Подробнее</summary>
+<summary>Additionally</summary>
 
 ```
 ###
@@ -445,23 +442,23 @@ Content-Type: application/json
 </details>
 
 ___
-## Как запустить
-Для работы приложения необходимо:
-<li>установить MySQL (8.0);</li>
-<li>настроить соединение с базой данных по конфигурации - application.yaml.</li>
+## How to build
+You would need:
+<li>installed MySQL (8.0);</li>
+<li>established DB connection, config file - application.yaml.</li>
 
 ```
 server:
-  port: 8080
+  port: 8080
 
 spring:
-  datasource:
-    username: root
-    password: password
-    url: jdbc:mysql://localhost:3306/digitalTest?useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    username: root
+    password: password
+    url: jdbc:mysql://localhost:3306/digitalTest?useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
 ```
 ____
